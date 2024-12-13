@@ -31,7 +31,7 @@ export const firestore = async ({
       }),
       ...(withNextOptions
         ? {
-            next: { tags: [tag], revalidate: 10 },
+            next: { tags: [tag], revalidate: 1 },
           }
         : {}),
     },
