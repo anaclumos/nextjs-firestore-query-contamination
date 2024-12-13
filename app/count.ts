@@ -36,6 +36,6 @@ export const firestore = async ({
         : {}),
     },
   );
-
+  console.log(await response.clone().text());
   return response.json();
 };
